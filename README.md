@@ -1,3 +1,6 @@
+![License](https://img.shields.io/badge/License-MIT-yellow.svg)
+![CI](https://github.com/lekalderonicky/portfolio/actions/workflows/ci.yml/badge.svg)
+
 # Simple Django Portfolio
 
 This repository contains a minimal Django portfolio app (`portfolio`) that showcases projects and provides an admin interface to manage them.
