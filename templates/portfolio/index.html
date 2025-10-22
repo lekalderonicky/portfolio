@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}Home - Portfolio{% endblock %}
+
+{% block content %}
+  <section class="hero">
+    <h2>Hi — I'm Lekaldero</h2>
+    <p class="lead">I build clean, user-friendly web apps and tools. Here are a few projects I'm proud of.</p>
+  </section>
+
+  <section class="projects">
+    <h2>Featured Projects</h2>
+    <div class="grid">
+      {% for p in projects %}
+        <article class="card">
+          <h3>{{ p.title }}</h3>
+          <p>{{ p.description|truncatechars:180 }}</p>
+          {% if p.link %}
+            <p><a class="btn" href="{{ p.link }}" target="_blank">View Project</a></p>
+          {% endif %}
+        </article>
+      {% empty %}
+        <p>No projects yet — try adding some via the admin panel.</p>
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,34 @@
+:root{
+	--accent:#0ea5a4;
+	--muted:#6b7280;
+	--bg:#f8fafc;
+}
+html,body{height:100%;}
+body { font-family: Inter,Segoe UI,Arial, sans-serif; margin: 0; padding: 0; background: var(--bg); color:#111827 }
+header { background: linear-gradient(90deg,#06202a 0%, #0b3b3a 100%); color: #fff; padding: 1rem 0; box-shadow: 0 2px 8px rgba(2,6,23,0.08); }
+.container{width:90%; max-width:1000px; margin:0 auto}
+.header-inner{display:flex; align-items:center; justify-content:space-between}
+.brand{margin:0; font-size:1.25rem}
+.brand a{color:#fff; text-decoration:none}
+.main-nav a{color:rgba(255,255,255,0.9); margin-left:1rem; text-decoration:none}
+
+main{padding:2rem 0}
+.hero{background:linear-gradient(180deg, rgba(14,165,164,0.06), transparent); padding:2rem; border-radius:8px; margin-bottom:1.25rem}
+.hero h2{margin:0 0 .5rem; font-size:1.75rem}
+.lead{color:var(--muted); margin:0}
+
+.projects .grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); gap:1rem; margin-top:1rem}
+.card{background:#fff; padding:1rem; border-radius:8px; box-shadow:0 4px 12px rgba(2,6,23,0.06)}
+.card h3{margin:0 0 .5rem}
+.btn{display:inline-block; background:var(--accent); color:#fff; padding:.4rem .6rem; border-radius:6px; text-decoration:none}
+
+.about, .contact{background:#fff; padding:1rem; border-radius:8px; box-shadow:0 2px 8px rgba(2,6,23,0.04)}
+.contact-list{list-style:none; padding:0; margin:0}
+.contact-list li{margin-bottom:.5rem}
+
+footer{background:transparent; padding:1.5rem 0; text-align:center; color:var(--muted)}
+
+@media (max-width:600px){
+	.header-inner{flex-direction:column; gap:.5rem}
+	.main-nav a{margin-left:0; margin-right:.6rem}
+}

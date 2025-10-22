@@ -1,0 +1,31 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Portfolio{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+    <header>
+      <div class="container header-inner">
+        <h1 class="brand"><a href="/">Lekaldero Saniki</a></h1>
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/projects/">Projects</a>
+          <a href="/about/">About</a>
+          <a href="/contact/">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      {% block content %}{% endblock %}
+    </main>
+    <footer>
+      <div class="container footer-inner">
+        <p>Made with ♥ by Lekaldero — crafting clean code & delightful experiences.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Projects - Portfolio{% endblock %}
+
+{% block content %}
+  <section>
+    <h2>All Projects</h2>
+    <ul>
+      {% for p in projects %}
+        <li>
+          <h3><a href="{% url 'portfolio:project_detail' p.pk %}">{{ p.title }}</a></h3>
+          <p>{{ p.description|truncatechars:200 }}</p>
+        </li>
+      {% empty %}
+        <li>No projects yet.</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endblock %}
