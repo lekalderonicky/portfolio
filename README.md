@@ -5,6 +5,18 @@
 
 This repository contains a minimal Django portfolio app (`portfolio`) that showcases projects and provides an admin interface to manage them.
 
+## Table of Contents
+- [Quick install](#quick-install)
+- [Media and images](#media-and-images)
+- [Deployment notes](#deployment-notes)
+- [Useful commands](#useful-commands)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [Code of conduct](#code-of-conduct)
+- [Changelog](#changelog)
+- [License](#license)
+
+
 Contents
  - `mysite/` — Django project settings and URLs
  - `portfolio/` — main app (models, views, templates, admin)
@@ -90,13 +102,22 @@ Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
 # New-NetFirewallRule -DisplayName "Allow Django dev 8000" -Direction Inbound -LocalPort 8000 -Protocol TCP -Action Allow
 ```
 
+
 Contributing
 
-- Create a fork and open a pull request. The repo includes a `.gitignore` and minimal structure so it's ready to push.
+- Read [CONTRIBUTING.md](CONTRIBUTING.md) for the developer workflow. Fork and open a pull request against `main`.
+
+Code of conduct
+
+- Please follow the project's [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+Changelog
+
+- See [CHANGELOG.md](CHANGELOG.md) for release notes and history.
 
 License
 
-- This project has no license file. Add a LICENSE if you want to make it open-source.
+- This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
 
 Contact
 
